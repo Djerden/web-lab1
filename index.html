@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab №1</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="image">
+
+            <a href="https://itmo.ru/"><img src="img/small-itmo.png" alt=""></a>
+        </div>
+
+        <div id=info>
+        <span>
+            <a href="#">Горло Евгений</a>
+        </span>
+        <span>P3218</span>
+        <span>
+            <a href="#">Вариант №2816</a>
+        </span>
+        <div>
+    </header>
+
+    <main>
+        <div id="image-form"> <!--Общий блок для картинки и формы -->
+            <div class="graph"> <!--Блок для графика-->
+            <img src="img/grap.jpg" alt=""> 
+            </div> <!--Блок для графика-->
+            <div class="form"> <!--Блок для формы-->
+                <form id="coordinates-form" method="GET" action="#">
+                    <div class="x-checkboxes">
+                        X:
+                        <label>
+                            -3
+                            <input class="x-checkbox" type="checkbox" name="x" value="-3">
+                        </label>
+                        <label>
+                            -2
+                            <input class="x-checkbox" type="checkbox" name="x" value="-2">
+                        </label>
+                        <label>
+                            -1
+                            <input class="x-checkbox" type="checkbox" name="x" value="-1">
+                        </label>
+                        <label>
+                            0
+                            <input class="x-checkbox" type="checkbox" name="x" value="0">
+                        </label>
+                        <label>
+                            1
+                            <input class="x-checkbox" type="checkbox" name="x" value="1">
+                        </label>
+                        <label>
+                            2
+                            <input class="x-checkbox" type="checkbox" name="x" value="2">
+                        </label>
+                        <label>
+                            3
+                            <input class="x-checkbox" type="checkbox" name="x" value="3">
+                        </label>
+                        <label>
+                            4
+                            <input class="x-checkbox" type="checkbox" name="x" value="4">
+                        </label>
+                        <label>
+                            5
+                            <input class="x-checkbox" type="checkbox" name="x" value="5">
+                        </label>
+                    </div>
+                    <div class="Y-text" id="Y">
+                        <label>
+                            Y:
+                            <input id="Y-text" class="Y-text-input" type="text" name="y" placeholder="[-5; 5]" maxlength="14" required/>
+                        </label>
+                    </div>
+                    <div class="R-text" id="R">
+                        <label>R:
+                            <input id="R-text" class="R-text-input" type="text" name="r" placeholder="[1; 4]" maxlength="14" required/>
+                        </label>
+                    </div>
+                    <button id="submit-button" type="submit">Отправить</button>
+                    <button id="clear-button" type="reset">Очистить таблицу</button>
+                </form>
+            </div> <!--Блок для формы-->
+        </div> <!--Общий блок для картинки и формы -->
+
+        <div class="results"> <!--Блок для результатов-->
+            <table id="result-table">
+                <thead>
+                    <tr class="table-header">
+                        <th scope="col">X</th>
+                        <th scope="col">Y</th>
+                        <th scope="col">R</th>
+                        <th scope="col">Текущее время</th>
+                        <th scope="col">Время исполнения</th>
+                        <th scope="col">Результат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--сюда вставляется результат-->
+                </tbody>
+            </table>
+        </div> <!--Блок для результатов-->
+    </main>
+
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

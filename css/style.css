@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Ubuntu;
+}
+
+/*Общий блок для графика и формы*/
+#image-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 15px;
+    margin: 0 15% 20px 15%;
+
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+/*График*/
+main .graph {
+    margin-bottom: 20px;
+}
+
+main .graph > img {
+    width: 100%;
+    height: 100%;
+}
+/*График*/
+
+
+/*Форма*/
+main .form {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+main .form .x-checkboxes {
+    margin-bottom: 4%;
+}
+main .form .Y-text {
+    margin-bottom: 4%;
+}
+main .form .R-text {
+    margin-bottom: 4%;
+}
+
+main .form #submit-button {
+    background-color: #198653;
+    color: white;
+    border-radius: 7px;
+    border: none;
+
+    font-size: 14px;
+
+    padding: 5px;
+}
+main .form #submit-button:hover {
+    background-color: #1a7b4d;
+}
+main .form #submit-button:active {
+    background-color: #15633F;
+}
+
+main .form #clear-button {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 7px;
+    border: none;
+
+    font-size: 14px;
+    
+    padding: 5px;
+}
+main .form #clear-button:hover {
+    background-color: #c32f3e;
+}
+main .form #clear-button:active {
+    background-color: #A82835;
+}
+/*Форма*/
+
+
+/*Результаты*/
+main .results #result-table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+}
+
+main .results .table-header {
+    background-color: black;
+    color: white;
+}
+main .results .table-header > th {
+    padding: 12px;
+}
+
+/*один из стилей применится к строке таблицы, в зависимости от того, какой класс вырнет сервер*/
+main .results .table-response-right {
+    color: #198653;
+}
+main .results .table-response-wrong {
+    color: #dc3545;
+}
+
+.tip { /*подсказки*/
+    color: red;
+}
+
+/*Результаты*/
